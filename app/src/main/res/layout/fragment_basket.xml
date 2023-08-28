@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.BasketFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBasket"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lineBasket"
+        tools:listitem="@layout/basket_item"
+        android:paddingTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <View
+        android:id="@+id/lineBasket"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvPriceBasket"
+        android:background="@color/gray"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/lineBasket"
+        app:layout_constraintBottom_toTopOf="@id/btnCheckoutBasket"
+        android:text="Total :"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tvPriceBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/lineBasket"
+        app:layout_constraintBottom_toTopOf="@id/btnCheckoutBasket"
+        android:text="0.00"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCheckoutBasket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/lineBasket"
+        app:layout_constraintRight_toRightOf="@id/lineBasket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="checkout"
+        style="@style/MyButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
