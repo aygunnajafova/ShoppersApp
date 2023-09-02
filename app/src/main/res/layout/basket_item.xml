@@ -38,6 +38,7 @@
             android:layout_marginLeft="25dp"
             android:text="Adidas Shoe"
             android:textStyle="bold"
+            android:maxLength="20"
             app:layout_constraintBottom_toTopOf="@+id/layoutQtyBasketItem"
             app:layout_constraintLeft_toLeftOf="@+id/glBasketItem"
             app:layout_constraintTop_toTopOf="parent"
@@ -98,7 +99,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:src="@drawable/delete_icon"
-            android:layout_marginRight="18dp" />
+            android:layout_marginRight="18dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

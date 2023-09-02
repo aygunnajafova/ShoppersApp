@@ -82,7 +82,9 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvNameSignUp"
                 android:background="@drawable/edt_bg"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/tvEmailSignUp"
@@ -103,7 +105,9 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEmailSignUp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/edt_bg"/>
+                android:background="@drawable/edt_bg"
+                android:paddingHorizontal="15dp"
+                android:inputType="text"/>
 
             <TextView
                 android:id="@+id/tvPasswordSignUp"
@@ -124,7 +128,9 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvPasswordSignUp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/edt_bg" />
+                android:background="@drawable/edt_bg"
+                android:paddingHorizontal="15dp"
+                android:inputType="text"/>
 
             <Button
                 android:id="@+id/btnSignUp"

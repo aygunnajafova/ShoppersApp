@@ -24,7 +24,7 @@
         android:layout_height="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvPriceBasket"
+        app:layout_constraintBottom_toTopOf="@id/tvTotalBasket"
         android:background="@color/gray"
         android:layout_marginHorizontal="25dp"
         android:layout_marginBottom="25dp"/>
@@ -41,7 +41,7 @@
         android:layout_marginLeft="15dp" />
 
     <TextView
-        android:id="@+id/tvPriceBasket"
+        android:id="@+id/tvTotalBasket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="@id/lineBasket"

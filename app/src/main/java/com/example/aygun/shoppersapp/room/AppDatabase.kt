@@ -17,8 +17,8 @@ abstract class AppDatabase : RoomDatabase() {
         fun dataAccess(context: Context) : AppDatabase? {
             synchronized(AppDatabase::class) {
                 INSTANCE = Room.databaseBuilder(context.applicationContext,
-                    AppDatabase::class.java,"shoppers.sqlite")
-                    .createFromAsset("shoppers.sqlite")
+                    AppDatabase::class.java,"shoppers1.sqlite")
+                    .createFromAsset("shoppers1.sqlite")
                     .build()
             }
 

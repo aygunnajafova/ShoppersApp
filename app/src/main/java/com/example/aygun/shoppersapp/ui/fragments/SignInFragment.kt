@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.aygun.shoppersapp.R
 import com.example.aygun.shoppersapp.databinding.FragmentSignInBinding
 
@@ -20,13 +21,13 @@ class SignInFragment : Fragment() {
 
     private fun signIn() {
         binding.btnSignIn.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.signInToHome)
+            findNavController().navigate(R.id.signInToHome)
         }
     }
 
     private fun goToSignUp() {
         binding.tvSignUp.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.signUpToSignIn)
+            findNavController().navigate(SignInFragmentDirections.signInToSignUp())
         }
     }
 

@@ -79,6 +79,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvUsernameSignIn"
                 android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                android:inputType="text"
                 android:background="@drawable/edt_bg" />
 
             <TextView
@@ -100,6 +102,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvPasswordSignIn"
                 android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                android:inputType="text"
                 android:background="@drawable/edt_bg" />
 
             <Button

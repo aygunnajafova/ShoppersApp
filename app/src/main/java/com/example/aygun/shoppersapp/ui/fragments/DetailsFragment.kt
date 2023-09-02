@@ -51,6 +51,7 @@ class DetailsFragment : Fragment() {
                 for(item in basketItems) {
                     if(basketItem.id == item.id) {
                         cond=false
+                        basketItem.quantity = item.quantity
                         break
                     }
                 }

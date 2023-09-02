@@ -27,12 +27,9 @@ class BasketFragment : Fragment() {
         bdao = db.getBasketItemDao()
 
         setBasketAdapter()
-        //totalPrice()
+        basketTotal()
 
         //val bundle: BasketFragmentArgs by navArgs()
-
-
-
 
         return binding.root
     }
@@ -46,19 +43,17 @@ class BasketFragment : Fragment() {
 
     }
 
-    /*private fun totalPrice() {
+    private fun basketTotal(){
         val job = CoroutineScope(Dispatchers.Main).launch {
-            val basketItems = bdao.getAllBasketItems()
             var total = 0.0
-            for(item in basketItems) {
-                total += item.price.toDouble()
-                Log.e("prices",item.price.toString())
+            val basketItems = bdao.getAllBasketItems()
+            for (i in basketItems) {
+                total += i.quantity * i.price
             }
-            Log.e("finished1","ushgith")
-            binding.tvPriceBasket.text = "${totalPrice()} $"
+            binding.tvTotalBasket.text = "$total $"
         }
 
-    }*/
+    }
 
     /*private fun getAll() : List<BasketItem> {
         lateinit var basketItems: List<BasketItem>
