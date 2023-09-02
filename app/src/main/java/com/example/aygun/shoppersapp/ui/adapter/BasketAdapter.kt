@@ -1,5 +1,6 @@
 package com.example.aygun.shoppersapp.ui.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -33,7 +34,8 @@ class BasketAdapter(val basketItems: List<BasketItem>): RecyclerView.Adapter<Bas
         val item = basketItems[position]
         val b = holder.binding
 
-        b.ivBasketItem.setImageResource(R.drawable.nike)
+        val resourceId = holder.itemView.context.resources.getIdentifier(item.image, "drawable", holder.itemView.context.packageName)
+        b.ivBasketItem.setImageResource(resourceId)
         b.tvNameBasketItem.text = item.name
         b.tvPriceBasketItem.text = "${item.price} $"
         b.tvQtyBasketItem.text = item.quantity.toString()

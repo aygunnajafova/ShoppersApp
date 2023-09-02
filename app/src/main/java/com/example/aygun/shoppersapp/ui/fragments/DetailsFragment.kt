@@ -29,7 +29,8 @@ class DetailsFragment : Fragment() {
 
 
         //val item = HomeItem(1,"nike",250.0,"New collection item for you!","nike.jpg")
-        binding.ivDetails.setImageResource(R.drawable.nike)
+        val resourceId = requireContext().resources.getIdentifier(item.image,"drawable",requireContext().packageName)
+        binding.ivDetails.setImageResource(resourceId)
         binding.tvNameDetails.text = item.name
         binding.tvPriceDetails.text = "${item.price.toString()} $"
         binding.tvDescriptionDetails.text = item.description

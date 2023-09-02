@@ -39,8 +39,6 @@ class HomeAdapter(private val homeItems: List<HomeItem>): RecyclerView.Adapter<H
         with(b) {
             val resourceId = holder.itemView.context.resources.getIdentifier(item.image, "drawable", holder.itemView.context.packageName)
             ivHomeItem.setImageResource(resourceId)
-            Log.e("msg1",item.image)
-            Log.e("msg1",resourceId.toString())
             tvNameHomeItem.text = item.name
             tvPriceHomeItem.text = "${item.price} $"
             cvHomeItem.setOnClickListener {

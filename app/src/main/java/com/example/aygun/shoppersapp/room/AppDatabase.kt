@@ -6,11 +6,14 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.aygun.shoppersapp.data.entity.BasketItem
 import com.example.aygun.shoppersapp.data.entity.HomeItem
+import com.example.aygun.shoppersapp.data.entity.User
 
-@Database(entities = [BasketItem::class,HomeItem::class], version = 1)
+@Database(entities = [BasketItem::class,HomeItem::class,User::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun getBasketItemDao() : BasketItemDao
     abstract fun getHomeItemDao() : HomeItemDao
+
+    abstract fun getUserDao() : UserDao
 
     companion object {
         var INSTANCE: AppDatabase? = null
