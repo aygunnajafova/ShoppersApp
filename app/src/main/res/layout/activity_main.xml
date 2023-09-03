@@ -29,5 +29,5 @@
         app:labelVisibilityMode="unlabeled"
         app:itemIconSize="34dp"
         app:itemIconTint="@drawable/bottom_nav_icon_checked"
-        android:background="@color/white"/>
+        android:background="@color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>

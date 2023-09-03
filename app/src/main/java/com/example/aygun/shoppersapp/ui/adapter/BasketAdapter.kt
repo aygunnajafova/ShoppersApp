@@ -3,6 +3,7 @@ package com.example.aygun.shoppersapp.ui.adapter
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aygun.shoppersapp.R
 import com.example.aygun.shoppersapp.data.entity.BasketItem
@@ -42,7 +43,13 @@ class BasketAdapter(val basketItems: List<BasketItem>): RecyclerView.Adapter<Bas
         b.tvQtyDecrease.setOnClickListener {
             if(item.quantity > 0) {
                 item.quantity--
-                update(item)
+                if(item.quantity==0) {
+                    delete(item)
+                    notifyDataSetChanged()
+                } else {
+                    update(item)
+                }
+
                 b.tvQtyBasketItem.text = item.quantity.toString()
             }
 

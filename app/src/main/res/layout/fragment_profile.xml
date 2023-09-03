@@ -36,7 +36,7 @@
         android:layout_marginBottom="40dp"
         android:text="Hello Aygun"
         android:textStyle="bold"
-        android:textSize="32sp" />
+        android:textSize="32sp"/>
 
     <Button
         android:layout_width="0dp"
