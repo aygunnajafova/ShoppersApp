@@ -47,7 +47,7 @@ class SignInFragment : Fragment() {
                 }
                 if(res) {
                     Toast.makeText(requireContext(),"Welcome back $username!",Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.signInToHome)
+                    findNavController().navigate(R.id.signInToContainerFragment)
                 } else {
                     Toast.makeText(requireContext(),"Your username or password is wrong!", Toast.LENGTH_SHORT).show()
                 }

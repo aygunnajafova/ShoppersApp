@@ -34,9 +34,10 @@
         app:layout_constraintRight_toLeftOf="@+id/glRightHome"
         app:layout_constraintBottom_toTopOf="@+id/glTopHome"
         android:layout_marginBottom="40dp"
-        android:text="Hello Aygun"
+        android:text="Nice to see you!"
         android:textStyle="bold"
-        android:textSize="32sp"/>
+        android:textSize="32sp"
+        android:textColor="@color/dark_blue"/>
 
     <Button
         android:layout_width="0dp"

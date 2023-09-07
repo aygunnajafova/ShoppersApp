@@ -7,4 +7,6 @@
     <color name="yellow">#f9ef05</color>
     <color name="blue">#120edb</color>
     <color name="dark_blue">#110a46</color>
+
+    <color name="ic_launcher_background">#110a46</color>
 </resources>

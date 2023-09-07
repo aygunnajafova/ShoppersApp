@@ -20,8 +20,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/shopping_cart_icon"
-        android:title="Basket"
-        app:itemBackground="@color/blue"
-        app:itemIconTint="@color/blue"
-        app:itemTextColor="@color/blue"/>
+        android:title="Basket"/>
 </menu>

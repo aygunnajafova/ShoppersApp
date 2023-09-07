@@ -64,6 +64,7 @@ class DetailsFragment : Fragment() {
                     bidao.updateBasketItems(basketItem)
                 }
             }
+
         }
     }
 

@@ -19,8 +19,6 @@ class HomeAdapter(private val homeItems: List<HomeItem>): RecyclerView.Adapter<H
 
         }
     }
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeCardViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = HomeItemBinding.inflate(inflater,parent,false)

@@ -42,7 +42,7 @@ class SignUpFragment : Fragment() {
                 if(username!="" && email!="" && psw!="") {
                     udao.add(user)
                     Toast.makeText(requireContext(),"Your account was created successfully!",Toast.LENGTH_SHORT).show()
-                    Navigation.findNavController(it).navigate(R.id.signUpToHome)
+                    Navigation.findNavController(it).navigate(R.id.signUpToContainerFragment)
                 } else {
                     Toast.makeText(requireContext(),"You should full all sections!",Toast.LENGTH_SHORT).show()
                 }
